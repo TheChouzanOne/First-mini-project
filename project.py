@@ -9,6 +9,8 @@ ub = 5000000 #upperbound
 
 
 def isInt(n):
+    if n == '':
+        return False
     for x in n:
         if x < '0' or x > '9':
             return False
