@@ -16,16 +16,14 @@ def check_int(n):
 
 
 while guessesLeft > 0:
+    print 'Guesses left: ' + str(guessesLeft)
     
     guess = raw_input('Guess a number between ' + str(lb) + ' ' + str(ub) + ':')
     
     while check_int(guess) == False:
         guess = raw_input('That is not a number, please write it again: ')
     else:
-        guess = int(guess)
-        
-    
-    print 'Guesses left: ' + str(guessesLeft)
+        guess = int(guess)   
     
     if number == guess:
         print 'Congratulations! You have won.'
