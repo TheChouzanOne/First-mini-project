@@ -9,7 +9,7 @@ guessesLeft = 20
 lb = 1 #lowerbound
 ub = 5000000 #upperbound
 
-while guessesLeft > 0:
+while guessesLeft > 1:
     if number == guess:
         print 'Congratulations! You have won.'
         break
