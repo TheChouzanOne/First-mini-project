@@ -7,7 +7,6 @@ guessesLeft = 20
 lb = 1 #lowerbound
 ub = 5000000 #upperbound
 
-
 def isInt(n):
     if n == '':
         return False
