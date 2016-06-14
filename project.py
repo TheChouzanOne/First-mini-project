@@ -8,7 +8,7 @@ lb = 1 #lowerbound
 ub = 5000000 #upperbound
 
 
-def check_int(n):
+def isInt(n):
     for x in n:
         if x < '0' or x > '9':
             return False
@@ -20,8 +20,8 @@ while guessesLeft > 0:
     
     guess = raw_input('Guess a number between ' + str(lb) + ' ' + str(ub) + ':')
     
-    while check_int(guess) == False:
-        guess = raw_input('That is not a number, please write it again: ')
+    while not isInt(guess):
+        guess = raw_input('That is not a whole number, please write it again: ')
     else:
         guess = int(guess)   
     
